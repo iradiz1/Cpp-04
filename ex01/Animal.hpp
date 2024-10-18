@@ -11,6 +11,8 @@ public:
 
 	virtual void makeSound() const;
 	std::string getType() const;
+	std::string getIdea(int index);
+	void setIdea(std::string idea);
 
 protected:
 	std::string type;

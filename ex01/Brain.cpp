@@ -16,6 +16,7 @@ Brain& Brain::operator=(Brain &copy) {
 			this->ideas[i] = copy.ideas[i];
 		}
 	}
+	return *this;
 }
 
 Brain::~Brain() {

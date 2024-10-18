@@ -10,8 +10,11 @@ public:
 	Dog& operator=(Dog &copy);
 	~Dog();
 
-	void makeSound() const override; 
+	void makeSound() const override;
+	std::string getIdea(int index);
+	void setIdea(std::string idea);
 
 private:
-	Brain* brain;
+	Brain* Dogbrain;
+	int ideacount = 0;
 };

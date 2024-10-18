@@ -28,3 +28,15 @@ void Animal::makeSound() const {
 std::string Animal::getType() const {
 	return type;
 }
+
+std::string Animal::getIdea(int index) {
+	if (index > 99 || index < 0) {
+		std::cout << "index invalid" << std::endl;
+		return "";
+	}
+	return "";
+}
+
+void Animal::setIdea(std::string idea) {
+	(void)idea;
+}
