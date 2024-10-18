@@ -41,7 +41,7 @@ int main() {
         delete cats[i];  // Calls destructor for Cat
     }
 
-    const Animal* meta = new Animal();
+    //const Animal* meta = new Animal();
     const Animal* dog = new Dog();
     const Animal* cat = new Cat();
     
@@ -50,9 +50,9 @@ int main() {
     
     cat->makeSound(); // Will output Cat's sound
     dog->makeSound(); // Will output Dog's sound
-    meta->makeSound(); // Will output Animal's sound
+    //meta->makeSound(); // Will output Animal's sound
     
-    delete meta;
+    //delete meta;
     delete dog;
     delete cat;
 
